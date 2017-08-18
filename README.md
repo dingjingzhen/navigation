@@ -2,7 +2,8 @@
 navigationbar的各种问题
 
 第一次在github上写文章，有点小紧张哈，接下来我就把我在做iOS开发工程中遇到的一些关于navigationbar的隐藏、设置透明度等问题跟大家分享一下
-很多时候我们可能会遇到下图所示的情况，在这种情况下我们又两种方式对其进行解决：设置navigationbar隐藏和设置navigationbar透明。
+很多时候我们可能会遇到下图所示的情况，在这种情况下我们有两种方式对其进行解决：（1）设置navigationbar隐藏，（2）设置navigationbar透明。
+
 ![image](https://github.com/dingjingzhen/navigation//raw/master/image/image0.png)
 
 1、navigationbar的隐藏
