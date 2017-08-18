@@ -4,6 +4,7 @@ navigationbar的各种问题
 第一次在github上写文章，有点小紧张哈，接下来我就把我在做iOS开发工程中遇到的一些关于navigationbar的隐藏、设置透明度等问题跟大家分享一下
 很多时候我们可能会遇到下图所示的情况，在这种情况下我们又两种方式对其进行解决：设置navigationbar隐藏和设置navigationbar透明。
 ![image](https://github.com/dingjingzhen/navigation//raw/master/image/image0.png)
+
 1、navigationbar的隐藏
 [self.navigationController setNavigationBarHidden: YES];//设置navigationbar隐藏
 
@@ -17,7 +18,9 @@ navigationbar的各种问题
 这样做的时候你会发现在在跳转页面的时候没有动画效果了，此时你可以加上一个动画效果，很简单，将代码改成[self.navigationController setNavigationBarHidden:NO  animated:YES];即可。
 
 ok,试一下效果
+
 ![image](https://github.com/dingjingzhen/navigation//raw/master/image/image3.png)
+
 可以看到从下一个页面返回当前的页面的时候，会有很明显的黑块，这是由于在做返回的时候，navigationbar的隐藏没有做动画效果，在
 - (void)viewWillAppear:(BOOL)animated
 {
