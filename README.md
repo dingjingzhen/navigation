@@ -1,2 +1,7 @@
 # navigation
 navigationbar的各种问题
+
+第一次在github上写文章，有点小紧张哈，接下来我就把我在做iOS开发工程中遇到的一些关于navigationbar的隐藏、设置透明度等问题跟大家分享一下
+
+1、navigationbar的隐藏
+
