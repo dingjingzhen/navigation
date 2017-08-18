@@ -38,6 +38,30 @@ BUT，你以为这样就完美了吗？然鹅现实是残酷的，并非你想�
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden: YES animated: animated];
 }
+OK，大功告成！！！！
 
+BUT！！，师傅说了，其实要实现这样的功能，还有别的方法，譬如说。。。我特么给忘了，有点小尴尬，后边有时间在研究研究。
+
+2、navigationbar设为透明或者半透明。
+直接上代码
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
+
+效果
+
+![image](https://github.com/dingjingzhen/navigation//raw/master/image/image2.png)
+
+可以看到导航栏从不透明慢慢变为透明的一个过程。这样的效果其实很难看，具体怎么解决我在后面再继续研究一下，当然还有有个最笨的法子，自定义navigationbar，就是不用navigationcontroller，自己写一个类似的看着一模一样的导航栏。这个就具体问题具体分析啦。
 
 
